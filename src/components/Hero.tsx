@@ -45,7 +45,7 @@ export default function Hero({ onBookClick }: HeroProps) {
           left: 0;
           width: 100%;
           height: 100%;
-          background-image: url('/assets/entrance.png');
+          background-image: url('/assets/montana/montana-exterior-entrance.jpeg');
           background-size: cover;
           background-position: center;
           animation: heroZoom 25s infinite alternate ease-in-out;

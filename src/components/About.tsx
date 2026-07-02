@@ -12,8 +12,8 @@ export default function About() {
         <div className="about-visuals animate-fade-up">
           <div className="image-frame">
             <img 
-              src="/assets/lobby_fireplace.png" 
-              alt="Montana 2543 Lobby Fireplace Lounge" 
+              src="/assets/montana/montana-lobby-fireplace.jpeg" 
+              alt="Montana 2543 Uludağ lobby" 
               className="about-img"
               loading="lazy"
             />

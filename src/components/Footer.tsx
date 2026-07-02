@@ -28,8 +28,8 @@ export default function Footer({ setActivePage }: FooterProps) {
         {/* Brand Info */}
         <div className="footer-brand-col">
           <div className="footer-logo" onClick={() => handleNavClick('home')}>
-            MONTANA <span className="logo-number">2543</span>
-            <span className="logo-sub">ULUDAĞ</span>
+            <img src="/assets/montana/montana-logo.png" alt="Montana 2543 Logo" className="footer-logo-img" />
+            <span className="logo-sub">A FAHRI HERITAGE HOTEL</span>
           </div>
           <p className="footer-brand-desc">
             Uludağ'ın yamaçlarında, doğallığı ve sadeliği İskandinav minimalizmiyle buluşturan samimi dağ oteli deneyimi.
@@ -134,29 +134,27 @@ export default function Footer({ setActivePage }: FooterProps) {
         }
 
         .footer-logo {
-          font-family: var(--font-serif);
-          font-size: 1.6rem;
-          font-weight: 500;
-          letter-spacing: 2px;
-          color: var(--white);
           cursor: pointer;
           display: flex;
           flex-direction: column;
-          line-height: 1;
+          gap: 6px;
         }
 
-        .footer-logo .logo-number {
-          color: var(--accent);
-          font-weight: 300;
+        .footer-logo-img {
+          height: 60px;
+          width: auto;
+          object-fit: contain;
+          align-self: flex-start;
+          filter: brightness(0) invert(1);
         }
 
         .footer-logo .logo-sub {
           font-family: var(--font-sans);
           font-size: 0.55rem;
-          letter-spacing: 4px;
-          font-weight: 700;
-          color: rgba(255, 255, 255, 0.4);
-          margin-top: 3px;
+          letter-spacing: 2px;
+          font-weight: 600;
+          color: var(--accent);
+          margin-top: 2px;
         }
 
         .footer-brand-desc {

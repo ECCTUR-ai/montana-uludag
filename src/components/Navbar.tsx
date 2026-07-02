@@ -44,8 +44,7 @@ export default function Navbar({ activePage, setActivePage }: NavbarProps) {
       <header className={`navbar-header ${scrolled ? 'navbar-scrolled' : 'navbar-transparent'}`}>
         <div className="navbar-container">
           <div className="navbar-logo" onClick={() => handleNavClick('home')}>
-            MONTANA <span className="logo-number">2543</span>
-            <span className="logo-sub">ULUDAĞ</span>
+            <img src="/assets/montana/montana-logo.png" alt="Montana 2543 Logo" className="nav-logo-img" />
           </div>
 
           <nav className="navbar-desktop-nav">
@@ -82,7 +81,7 @@ export default function Navbar({ activePage, setActivePage }: NavbarProps) {
       <div className={`mobile-nav-overlay ${mobileMenuOpen ? 'open' : ''}`}>
         <div className="mobile-nav-content">
           <div className="mobile-nav-logo">
-            MONTANA <span>2543</span>
+            <img src="/assets/montana/montana-logo.png" alt="Montana 2543 Logo" className="mobile-logo-img" />
           </div>
           <div className="mobile-links-container">
             {navItems.map((item) => (
@@ -138,39 +137,29 @@ export default function Navbar({ activePage, setActivePage }: NavbarProps) {
         }
 
         .navbar-logo {
-          font-family: var(--font-serif);
-          font-size: 1.5rem;
-          font-weight: 600;
-          letter-spacing: 2px;
-          color: var(--white);
           cursor: pointer;
           display: flex;
-          flex-direction: column;
-          line-height: 1;
-          transition: color 0.3s ease;
+          align-items: center;
         }
 
-        .navbar-scrolled .navbar-logo {
-          color: var(--primary);
+        .nav-logo-img {
+          height: 52px;
+          width: auto;
+          object-fit: contain;
+          transition: all 0.3s ease;
+          filter: brightness(0) invert(1);
         }
 
-        .logo-number {
-          color: var(--accent);
-          font-weight: 300;
+        .navbar-scrolled .nav-logo-img {
+          height: 44px;
+          filter: none;
         }
 
-        .logo-sub {
-          font-family: var(--font-sans);
-          font-size: 0.55rem;
-          letter-spacing: 4px;
-          font-weight: 700;
-          color: rgba(255, 255, 255, 0.5);
-          margin-top: 3px;
-          transition: color 0.3s ease;
-        }
-
-        .navbar-scrolled .logo-sub {
-          color: var(--secondary);
+        .mobile-logo-img {
+          height: 60px;
+          width: auto;
+          object-fit: contain;
+          margin: 0 auto;
         }
 
         .navbar-desktop-nav {

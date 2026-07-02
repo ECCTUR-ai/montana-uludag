@@ -13,12 +13,13 @@ export default function Gallery() {
   ];
 
   const galleryImages = [
-    { url: '/assets/entrance.png', category: 'exterior', title: 'Montana Dış Cephe Giriş' },
-    { url: '/assets/lobby_fireplace.png', category: 'social', title: 'Lobi Şömine Salonu' },
-    { url: '/assets/triple_room.png', category: 'rooms', title: 'Geniş Üç Kişilik Oda' },
-    { url: '/assets/makeup_minibar.png', category: 'rooms', title: 'Makyaj Masası & Minibar' },
-    { url: '/assets/outdoor_cafe.png', category: 'cafe', title: 'Açık Hava Montana Cafe' },
-    { url: '/assets/corridor.png', category: 'social', title: 'Sakin Ahşap Koridor' }
+    { url: '/assets/montana/montana-exterior-entrance.jpeg', category: 'exterior', title: 'Montana Dış Cephe Giriş', alt: 'Montana 2543 Uludağ otel girişi' },
+    { url: '/assets/montana/montana-lobby-fireplace.jpeg', category: 'social', title: 'Lobi Şömine Salonu', alt: 'Montana 2543 Uludağ lobby' },
+    { url: '/assets/montana/montana-reception.jpeg', category: 'social', title: 'Resepsiyon Karşılama', alt: 'Montana 2543 Uludağ lobby' },
+    { url: '/assets/montana/montana-room-triple.jpeg', category: 'rooms', title: 'Geniş Üç Kişilik Oda', alt: 'Montana 2543 Uludağ oda' },
+    { url: '/assets/montana/montana-room-minibar.jpeg', category: 'rooms', title: 'Makyaj Masası & Minibar', alt: 'Montana 2543 Uludağ minibar ve makyaj masası' },
+    { url: '/assets/montana/montana-outdoor-cafe.jpeg', category: 'cafe', title: 'Açık Hava Montana Cafe', alt: 'Montana 2543 Uludağ cafe' },
+    { url: '/assets/montana/montana-corridor.jpeg', category: 'social', title: 'Sakin Ahşap Koridor', alt: 'Montana 2543 Uludağ koridor' }
   ];
 
   const filteredImages = selectedFilter === 'all' 
@@ -32,7 +33,7 @@ export default function Gallery() {
           <span className="subtitle">MONTANA DETAYLARI</span>
           <h2 className="heading-md">Fotoğraf Galerisi</h2>
           <p className="header-desc">
-            Sıcak iç mekanlarımızı, kış manzaralarımızı ve şömineli dinlenme köşelerimizi fotoğraflarla keşfedin.
+            Sıcak iç mekanlarimizi, kış manzaralarımızı ve şömineli dinlenme köşelerimizi fotoğraflarla keşfedin.
           </p>
         </div>
 
@@ -58,7 +59,7 @@ export default function Gallery() {
               onClick={() => setLightboxImg(img.url)}
             >
               <div className="gallery-image-wrapper">
-                <img src={img.url} alt={img.title} className="gallery-img" loading="lazy" />
+                <img src={img.url} alt={img.alt} className="gallery-img" loading="lazy" />
                 <div className="gallery-overlay">
                   <div className="gallery-text">
                     <span className="gallery-cat">{img.category.toUpperCase()}</span>

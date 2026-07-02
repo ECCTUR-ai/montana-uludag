@@ -33,7 +33,7 @@ export default function ReservationCTA({ onReserveClick }: ReservationCTAProps) 
           left: 0;
           width: 100%;
           height: 100%;
-          background-image: url('/assets/entrance.png');
+          background-image: url('/assets/montana/montana-exterior-entrance.jpeg');
           background-size: cover;
           background-position: center;
           transition: transform 1.5s cubic-bezier(0.16, 1, 0.3, 1);

@@ -13,7 +13,8 @@ export default function Rooms({ onBookRoom }: RoomsProps) {
       price: '₺3.200',
       size: '28 m²',
       capacity: '2 Yetişkin',
-      image: '/assets/triple_room.png',
+      image: '/assets/montana/montana-room-triple.jpeg',
+      alt: 'Montana 2543 Uludağ oda',
       features: ['Yerden Isıtma', 'Orman Manzarası', 'Özel Banyo Ürünleri', 'Çay/Kahve İkramı', 'Hızlı Wi-Fi']
     },
     {
@@ -21,7 +22,8 @@ export default function Rooms({ onBookRoom }: RoomsProps) {
       price: '₺4.800',
       size: '45 m²',
       capacity: '3-4 Kişi',
-      image: '/assets/makeup_minibar.png',
+      image: '/assets/montana/montana-room-minibar.jpeg',
+      alt: 'Montana 2543 Uludağ minibar ve makyaj masası',
       features: ['Şömine Köşesi', 'Geniş Yatak Grubu', 'Pist Manzaralı Balkon', 'Minibar ve Çay Seti', 'Yerden Isıtma']
     },
     {
@@ -29,7 +31,8 @@ export default function Rooms({ onBookRoom }: RoomsProps) {
       price: '₺2.400',
       size: '22 m²',
       capacity: '2 Kişi',
-      image: '/assets/corridor.png',
+      image: '/assets/montana/montana-room-wall-art.jpeg',
+      alt: 'Montana 2543 Uludağ oda',
       features: ['Sade & Sıcak Tasarım', 'Merkezi Isıtma', 'Banyo Ürünleri', 'Çay/Kahve İkramı', 'Hızlı Wi-Fi']
     }
   ];
@@ -49,7 +52,7 @@ export default function Rooms({ onBookRoom }: RoomsProps) {
           {roomCategories.map((room, i) => (
             <div key={i} className="room-card animate-fade-up">
               <div className="room-image-wrapper">
-                <img src={room.image} alt={room.title} className="room-image" loading="lazy" />
+                <img src={room.image} alt={room.alt} className="room-image" loading="lazy" />
                 <div className="room-price-badge">{room.price} <span className="price-unit">/ gece</span></div>
               </div>
               

@@ -33,8 +33,8 @@ export default function Restaurant() {
           <div className="restaurant-images animate-fade-up">
             <div className="image-card">
               <img 
-                src="/assets/outdoor_cafe.png" 
-                alt="Montana Cafe Outdoor seating area" 
+                src="/assets/montana/montana-outdoor-cafe.jpeg" 
+                alt="Montana 2543 Uludağ cafe" 
                 className="rest-img"
                 loading="lazy"
               />
