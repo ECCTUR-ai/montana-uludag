@@ -28,7 +28,7 @@ export default function Footer({ setActivePage }: FooterProps) {
         {/* Brand Info */}
         <div className="footer-brand-col">
           <div className="footer-logo" onClick={() => handleNavClick('home')}>
-            <img src="/assets/montana/montana-logo.png" alt="Montana 2543 Logo" className="footer-logo-img" />
+            <img src="/assets/montana/logo.png" alt="Montana 2543 Logo" className="footer-logo-img" />
             <span className="logo-sub">A FAHRI HERITAGE HOTEL</span>
           </div>
           <p className="footer-brand-desc">

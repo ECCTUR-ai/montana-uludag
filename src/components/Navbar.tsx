@@ -44,7 +44,7 @@ export default function Navbar({ activePage, setActivePage }: NavbarProps) {
       <header className={`navbar-header ${scrolled ? 'navbar-scrolled' : 'navbar-transparent'}`}>
         <div className="navbar-container">
           <div className="navbar-logo" onClick={() => handleNavClick('home')}>
-            <img src="/assets/montana/montana-logo.png" alt="Montana 2543 Logo" className="logo-img" />
+            <img src="/assets/montana/logo.png" alt="Montana 2543 Logo" className="logo-img" />
           </div>
 
           <nav className="navbar-desktop-nav">
@@ -81,7 +81,7 @@ export default function Navbar({ activePage, setActivePage }: NavbarProps) {
       <div className={`mobile-nav-overlay ${mobileMenuOpen ? 'open' : ''}`}>
         <div className="mobile-nav-content">
           <div className="mobile-nav-logo">
-            <img src="/assets/montana/montana-logo.png" alt="Montana 2543 Logo" className="logo-img mobile-logo-img" />
+            <img src="/assets/montana/logo.png" alt="Montana 2543 Logo" className="logo-img mobile-logo-img" />
           </div>
           <div className="mobile-links-container">
             {navItems.map((item) => (
