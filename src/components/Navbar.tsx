@@ -44,7 +44,7 @@ export default function Navbar({ activePage, setActivePage }: NavbarProps) {
       <header className={`navbar-header ${scrolled ? 'navbar-scrolled' : 'navbar-transparent'}`}>
         <div className="navbar-container">
           <div className="navbar-logo" onClick={() => handleNavClick('home')}>
-            <img src="/assets/montana/montana-logo.png" alt="Montana 2543 Logo" className="nav-logo-img" />
+            <img src="/assets/montana/montana-logo.png" alt="Montana 2543 Logo" className="logo-img" />
           </div>
 
           <nav className="navbar-desktop-nav">
@@ -81,7 +81,7 @@ export default function Navbar({ activePage, setActivePage }: NavbarProps) {
       <div className={`mobile-nav-overlay ${mobileMenuOpen ? 'open' : ''}`}>
         <div className="mobile-nav-content">
           <div className="mobile-nav-logo">
-            <img src="/assets/montana/montana-logo.png" alt="Montana 2543 Logo" className="mobile-logo-img" />
+            <img src="/assets/montana/montana-logo.png" alt="Montana 2543 Logo" className="logo-img mobile-logo-img" />
           </div>
           <div className="mobile-links-container">
             {navItems.map((item) => (
@@ -142,23 +142,21 @@ export default function Navbar({ activePage, setActivePage }: NavbarProps) {
           align-items: center;
         }
 
-        .nav-logo-img {
-          height: 52px;
+        .logo-img {
+          height: 44px;
           width: auto;
           object-fit: contain;
+          display: block;
           transition: all 0.3s ease;
-          filter: brightness(0) invert(1);
+          filter: none;
         }
 
-        .navbar-scrolled .nav-logo-img {
-          height: 44px;
-          filter: none;
+        .navbar-scrolled .logo-img {
+          height: 38px;
         }
 
         .mobile-logo-img {
           height: 60px;
-          width: auto;
-          object-fit: contain;
           margin: 0 auto;
         }
 

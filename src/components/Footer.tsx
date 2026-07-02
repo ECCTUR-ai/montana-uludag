@@ -144,8 +144,9 @@ export default function Footer({ setActivePage }: FooterProps) {
           height: 60px;
           width: auto;
           object-fit: contain;
+          display: block;
           align-self: flex-start;
-          filter: brightness(0) invert(1);
+          filter: none;
         }
 
         .footer-logo .logo-sub {
